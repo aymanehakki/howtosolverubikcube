@@ -1,0 +1,231 @@
+<!doctype>
+<html>
+<head>
+<title>how to solve rubik's cub:(for biginners) </title>
+<style>*{margin:0;padding:0}
+body{background:linear-gradient(#200016,#10001f);height:100vh;font-family: system-ui}
+a{text-decoration:none;color:#fff}
+header{position:fixed;width:95%;z-index:100;display:flex;justify-content:space-between;align-items:center ;margin: 30px;}
+header.logo{font-size:25px; text-transform:uppercase;}
+header ul{display:flex;justify-content:center;align-items:center;list-style:none;}
+header ul li{margin-right:20px;}
+header ul li a{padding:4px  13px;border-radius:20px;}
+header ul li a:hover,.active{background:#fff;color:200016;}
+.main{position:relative;height:115vh;width:100%;align:center;display:flex;justify-content:center;align-items:center;overflow:hidden;
+}
+.main:after{
+content:'';
+position:absolute;
+bottom:0;
+height:100px;
+widht:100%;
+background:linear-gradient(to top,#200016,transparent);}
+.main img{position:absolute;widht:120%; height:115vh}
+#moon{mix-blend-mode:screen;transform:translateY(80px)}
+.chapters{color:#fff;font-size:2px;text-transform:appercase;transform:translateY(-140px);
+}
+.content{color:#fff;padding:30px}
+.content h2{margin:20px;font-size:30px;}
+.content p{margin:20px}
+.moi{color:blue;margin:20}
+footer .ime{color:white;font-size:30px;}
+body .c{color:green;margin:30;}
+body .b{color:red;margin:30;}
+body .l{color:#32a0c2;margin:30;}
+body .e{color:#32a0c2;margin:30;}
+.m{color:red;margin:30;}
+.co{color:white;}
+
+
+main{padding:0;margin:0;}
+</style>
+</head>
+<body>
+<header>
+<h2><a  class="logo">CHAPTERS:</a></h2>
+<ul>
+<li><a href="#ma"class="active">Making the white cross</a></li>
+<li><a href="#me">completing the white face</a></li>
+<li><a href="#learn">completing the cutting edges </a></li>
+<li><a href="#be me">solving the yellow cross</a></li>
+<li><a href="#ana">solving the remaining pieces</a></li>
+
+</ul>
+
+</header>
+<section class="main">
+<img src="img1/stars1.png" id="stars">
+<h2 class="chapters"> How to solve Rubik's cube:</h2>
+
+
+
+<img src="img1/moon2.png" id="moon">
+<img src="img1/mountains3.png" id="mountains3">
+<img src="img1/mountains4.png" id="mountains4">
+<img src="img1/river5.png" id="river">
+<img src="img1/boat6.png" id="boat"> 
+<img src="img1/mountains7.png" id="mountain7">
+</section>
+<div class="content"></div>
+<script src="main.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+<p>
+
+<h2 class="b"><ins>INTRODUCTION :</ins></h2>
+<h4 class="co">the <b><u><i>rubik's cube</i></u></b> is a mechanical puzzle invented by the professor of architecture <b>Erno Rubik <u>in 1974.</u></b><br/>
+rubik's cube has six faces and each one has a different color from the others and the six colors are: white yellow red orange green and blue.<br/></h4><img src="img1/rubik.webp " width="35%"/><br/>
+<STRONG> <h2 class="co">How can we solve a Rubik's cube?( for beginner's) </h2></STRONG>
+<p><h4 class="co">First befor we begin to solve this <abbr tittle=" Another name for Rubik's cube" ><i><b>magic cube</b></i></abbr> we must learn Rubik's cube Terminology first of all and it is the most important basics.If you did not learn this language you will never be able to solve a Rubik's cube.</h4></p>
+<ol type="I"><h2><li class="b"><p>Rubik's cube Terminology:</p><br/> </li></h2>
+<P><H4 class="co">To solve a Rubik's cube, you must first know what terms we use in writing algorithms that help us solve this cube.</H4></P>
+<P><H4 class="co">It can be said that these terms are the first letters of some words in the English language, such as:</H4></P>
+<TABLE border="1"; >
+<TR class="e" >
+<th><strong>terminology of Rubik's cube</strong></th>
+<th><strong>Meaning</MARK></strong></th>
+</TR>
+<TR class="e">
+<th ><strong>U</MARK></strong></th>
+<th ><strong>UP<MARK></strong></th>
+</TR>
+<TR class="e">
+<th ><strong>B</MARK></strong></th>
+<th ><strong>BACK</MARK></strong></th>
+</TR>
+<TR class="e">
+<th ><strong>R</MARK></strong></th>
+<th ><strong>RIGHT</MARK></strong></th>
+</TR>
+<TR class="e">
+<th ><strong>L</MARK></strong></th>
+<th ><strong>LEFT</MARK></strong></th>
+</TR>
+<TR class="e">
+<th ><strong>D</MARK></strong></th>
+<th ><strong>DOWN</MARK></strong></th>
+</TR>
+</TABLE>
+<H4 class="co">All of these words express the movements we make during the process of solving the Rubik's cube and these movements are clockwise.
+But when we find a sign that resembles I, these movements must be made in a counterclockwise direction, for example:</H4>
+<TABLE border="1">
+<TR class="e">
+<th><strong>terminology of Rubik's cube( counterclockwise direction)</MARK></strong></th>
+<th><strong>terminology of Rubik's cube( clockwise direction)</MARK></strong></th>
+</TR>
+<TR class="e">
+<th><strong>U<sup>I</sup></MARK></strong></th>
+<th><strong>U</MARK></strong></th>
+</TR>
+<TR class="e">
+<th><strong>B<sup>I</suP></MARK></strong></th>
+<th><strong>B</MARK></strong></th>
+</TR>
+<TR class="e">
+<th><strong>R<sup>I</suP></MARK></strong></th>
+<th><strong>R</MARK></strong></th>
+</TR>
+<TR class="e">
+<th><strong>L<sup>I</suP></MARK></strong></th>
+<th><strong>L</MARK></strong></th>
+</TR>
+<TR class="e">
+<th><strong>D<sup>I</suP></MARK></strong></th>
+<th><strong>D</MARK></strong></th>
+</TR>
+</TABLE><br/>
+<IMG SRC="img1/download15.jpg"  width="30%"/><br/>
+<h2><li class="b"><th><strong>Rubik's cube solving steps:</strong></th></li></h2>
+<h4 class="co">After we have learned the terminology of the Rubik's Cube, now we will begin to solve the magic cube using the beginner's methods and through different steps.
+Which is: 
+<ol> 
+<li class="c">Making the white cross </li><li class="c"> completing the white face </li><li class="c"> completing the cutting edges </li><li class="c"> solving the yellow cross </li><li class="c"> solving the remaining pieces</li></ol></h4>
+</ol>
+<ol><h2> 
+<li id="ma" class="l">Making the white cross </li></h2><br/>
+<IMG SRC="img1/download1.jpg "width="25%" /><br/>
+<H4 class="co">To solve the white cross we don't need any algorithms because it's something you have to learn by yourself, but I give you the method that most beginners use.
+First we will collect the edge pieces that contain the white color around the yellow center, then we will rotate the colors that share the white color in the edge pieces to their centers, then hold the cube so that the yellow center is facing your face and do this movement on all the edge pieces around the yellow center: <strong>2R</strong><BR/>
+Then we get the shape in the image above.</H4>
+<H2><li id="me" class="l "> completing the white face </li></H2>
+<H4 class="co">After we solve the white cross, we will solve the entire white face. To do this process, we will need the corner pieces that bear the white color, and we will place them between the two centers of the remaining colors on this corner piece, then we will use this algorithm to put the piece in its place:<strong> R<SUP>I</SUP>D<SUP>I</SUP>RD</STRONG><BR/>
+ And continue to return it until the piece settles in its place.</H4>
+<H2><li id="learn" class="l " > completing the cutting edges </li></H2>
+<H4 class="co">After we have finished solving the white face, we will move on to solving the remaining edge pieces, and to do that, we will move the edge pieces that have two different colors other than yellow to become connected with their color center. If we move them to the right, we will do the following algorithm:
+D<SUP>I</SUP>R<SUP>I</SUP>DRDFD<SUP>I</SUP>F<SUP>I</SUP><BR/>
+And if we move it to the left, we will use the following algorithm:
+DLD<SUP>I</SUP>L<SUP>I</SUP>D<SUP>I</SUP>F<SUP>I</SUP>DF<BR/>
+After doing these movements, we will have completed half the stages of solving a Rubik's cube for beginners, and we will get the following figure.</H4><br/>
+<IMG SRC="img1/image024-1.avif"/><br/>
+<h2><li id="be me" class="l "> solving the yellow cross </li></h2>
+<H4 class="co">To solve the yellow cross, we need only two algorithms, one to solve the yellow cross, the other to arrange the yellow cross with the other colorsand let's solve The yellow cross we must hold the cube so that the yellow face looks up, then we will start applying the first algorithm, which is: FURU<SUP>I</SUP>R<SUP>I</SUP>F<SUP>I</SUP><BR/>
+After we solve the yellow cross, we must combine it with the other colors, by doing this algorithm:
+RUUR<SUP>I</SUP>U<SUP>I</SUP>RU<SUP>I</SUP>R<SUP>I</SUP><BR/>
+And we continue to bring it back until the colors combine between each other</H4>
+<H2><li id="ana" class="l "> solving the remaining pieces </li></ol></H2>
+<h4 class="co">Now we need to solve the remaining pieces and to do this step we need to do two steps: they are arranging the pieces and the other is matching the colors to solve the cube.</h4>
+ <ol type="a">
+<h3><li class="c"> arranging the pieces</li></h3>
+<h4 class="co">To arrange the pieces we need one algorithm:<br/>
+ L<SUP>I</SUP>URU<SUP>I</SUP>LUR<SUP>I</SUP>U<SUP>I</SUP><br/>
+And we continue to do these movements until the pieces arrange the angles between their centers.</h4>
+<h3><li class="c">matching the colors</li></h3>
+<H4 class="co">To match colors, we must use this only algorithm, which is RUUR<SUP>I</SUP>U<SUP>I</SUP>RU<SUP>I</SUP>L<SUP>I</SUP>UULUL<SUP>I</SUP>U<BR/>
+ and this will be the last algorithm to solve the Rubik's Cube</H4><BR/>
+<h4 class="co">And then we get this shape</H4><BR/> <IMG SRC="img1/DOWNLOAD2.JPG"/></H4><br/><h1 class="co">And thus we complete the solution of the Rubik's Cube(for beginners)</h1>
+<h2 class="m">Our pages:</h2>
+<li class="moi">
+	 <a rel="stylesheet" href="index.html" target="blank">Home</a>
+	 </li>
+	 
+ <li class="moi" >
+	 <a href="index4.html">PRODUCERS</a>
+	 </li>
+	 <li class="moi" >
+	 <a href="index3.html">Advantages of rubik's cube</a>
+	 </li>
+	 <li class="moi" >
+	 <a href="index5.html">who is Erno Rubik</a>
+	 </li>
+	
+<ol/>
+</ol>
+</p>
+</div>
+<script src="main.js"></script>
+</body>
+<footer>
+<strong><em><h1 class="ime" align="center"> <ins>AYMANE HAKKI WEB SITE </ins></em> &copy;2022</h1></strong>
+</footer>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
